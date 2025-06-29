@@ -1,0 +1,433 @@
+Trabalho final da UC3/ Luiz Rogério e Charles Pedro 
+
+ 
+
+Etapa 1.  Escolha o Sistema. 
+
+Sistema CRM escolhido: Bitrix24 
+
+ 
+
+Etapa 2. Planejar e executar 10 casos de teste reais, utilizando exclusivamente teste de caixa preta. 
+
+Caso teste 1: 
+
+Identificador: CT001 
+Título do teste: Login com credenciais válidas 
+Objetivo do teste: Verificar se o usuário consegue acessar o sistema com e-mail e senha corretos, que já foram cadastrados anteriormente ou com conta google 
+Funcionalidade testada: Login/autenticação 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta google 
+
+Clique em "Entrar" 
+
+Resultado esperado: O sistema deve autenticar o usuário e redirecionar para o painel principal 
+
+ Resultado obtido: Login foi feito normalmente com conta já existente sem problemas 
+
+ Status: Aprovado 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso teste 2: 
+
+Identificador: CT002 
+Título do teste: Envio de mensagens por dentro da plataforma 
+Objetivo do teste: Verificar a funcionalidade de envio de mensagens para outros usuários colaboradores dentro do CRM 
+Funcionalidade testada: Comunicação\Mensagem 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta google 
+
+Após realizar login. Slecionando aba “Messager” 
+
+Deve-se enviar uma mensagem para outro usuário 
+
+Resultado esperado: O sistema deve enviar a mensagem ou imagem sem erros ou demora na comunicação 
+
+ Resultado obtido: Enviado mensagem sem problemas, sistema correspondeu dentro do tempo esperado 
+
+Status: Aprovado 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso teste 3: 
+
+Identificador: CT003 
+Título do teste: Envio de imagens/arquivos por dentro da plataforma 
+Objetivo do teste: Verificar a funcionalidade de envio de imagens/arquivos para outros usuários colaboradores dentro do CRM pela aba principal 
+Funcionalidade testada: Comunicação\Mensagem 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta google 
+
+Após realizar login. Slecionando aba “Feed” 
+
+Deve-se enviar algum arquivo para a empresa pela opção “Feed” 
+
+Resultado esperado: O sistema deve enviar o arquivo para todos pela opção “Feed”, sendo possivel realizar o download por outros colaboradoes 
+
+Resultado obtido: Enviado arquivo sem problemas, sistema correspondeu dentro do tempo esperado com arquivo e pré-visualização 
+
+Status: Aprovado 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso teste 4: 
+
+Identificador: CT004 
+Título do teste: Agendamento de Eventos 
+Objetivo do teste: Verificar a funcionalidade de agendamentos de eventos e horarios dentro da plataforma, para controle de agenda 
+Funcionalidade testada: Agendamento/Eventos 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta google 
+
+Após realizar login. Slecionando aba “Calendário” 
+
+Deve-se selecionar o dia correspondente do evento, horario, local e colaboradores envolvidos 
+
+Resultado esperado: O sistema deve agendar corretamente, mostrando uma notificação aos usuários envolvidos, mostrar na tela o dia e horario agendado no mesmo modulo. 
+
+Resultado obtido: Sistema permitiu agendar um horario e evento como esperado. Visualização do agendamento foi mostrada corretamente 
+
+Status: Aprovado 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso teste 5: 
+
+Identificador: CT005 
+Título do teste: Processo de Vendas 
+Objetivo do teste: Verificar a funcionalidade de criação de cards referentes as vendas ativas, para realizar o controle interno e documentação sobre os itens. 
+Funcionalidade testada: Documentação/Controle 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta Google 
+
+Após login, selecione a aba “CRM” 
+
+Clique em “Negócio Rápido” e preencha os dados para criação de um card de venda 
+
+Acesse o atendimento, adicione observações e anexe documentos 
+
+Finalize a venda no sistema 
+
+Resultado esperado: O sistema deve agendar, mostrando uma notificação aos	 usuários envolvidos, mostrar na tela o dia e horario agendado no mesmo modulo 
+
+Resultado obtido: O sistema permitiu a criação do card de venda, possibilitando adicionar observações, anexos e finalizar o atendimento com sucesso. 
+
+Status: Aprovado 
+
+ 
+
+ 
+
+Caso teste 6: 
+
+Identificador: CT006 
+Título do teste: Processo de Vendas 2 
+Objetivo do teste: Verificar a funcionalidade de criação de cards, o sistema não deve permitir a criação de um card com vendas se não for incluso o cliente. Deve apresentar uma informação na tela para melhor entendimento do colaborador 
+Funcionalidade testada: Documentação/Controle 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta google 
+
+Após realizar login. Slecionando aba “CRM” 
+
+Deve-se selecioar opção “Negocio Rápido”, não deve informar o cliente para realizar o teste 
+
+O sistema não deve criar a venda e deve apresentar mensagem, informando o motivo da não criação da venda 
+
+Resultado esperado: O sistema não deve permitir a criação da venda se não for incluso qualquer dado em campos referente o cliente. 
+
+Resultado obtido: Sistema não criou a venda, mas não apresentou nenhuma mensagem informando o motivo de sua falha na criação. Sistema, além de não mostrar mensagens, bloqueou o botão de criação na mesma etapa onde o teste foi realizado, sendo necessário reiniciar a pagina para tentar novamente com as informações corretas ou mais um teste. 
+
+ Status: Reprovado 
+
+ 
+
+Caso teste 7: 
+
+Identificador: CT007 
+Título do teste: Utilidades e Ferramentas 
+Objetivo do teste: Verificar a funcionalidade e respostas das ferramentas de IA, disponiveis para uso no proprío CRM, tanto para respostas automaticas, respostas a envios da empresa. Verificando se a ferramenta atende e é precisa para uso seguro da mesma. 
+Funcionalidade testada: Ferramentas/Funções 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta Google 
+
+Após login, selecione a aba “CRM” 
+
+Clique em “Menssenger” e "Copolit” 
+
+Acesse o bate-papo e realize algumas perguntas e respostas em e-mails para serem preenchidos automaticamente 
+
+Resultado esperado: O sistema deve retornar uma resposta plausivel para o	 questionado, tanto para perguntas ou continuações de emails escritos. Não			 fugindo do contexto, corrigindo erros e retornado respostas mais proximas do	 	  correto possivel. 
+
+Resultado obtido: Sistema da IA, “Copilot” funcionou corretamente, trazendo respostas e soluções proximas a realidade e com continuação correta. Bloqueando também conteudos improprios. 
+
+Status: Aprovado 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso teste 8: 
+
+Identificador: CT008 
+Título do teste: Cadastros de Clientes/Empresas 
+Objetivo do teste: Verificar se o sistema atende ao requisito de cadastros de empresas para gerenciar melhor vendas e cards 
+Funcionalidade testada: Cadastros/Clientes 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta Google 
+
+Após login, selecione a aba “CRM” 
+
+Clique em “Clientes” e "Criar” 
+
+Acesse a aba e cadastre o cliente corretamente com os dados válidos 
+
+Resultado esperado: Sistema deve permitir cadastrar o cliente sem erros, caso	forem dados reais sem falhas. 
+
+Resultado obtido: Sistema permitiu cadastrar CNPJ e CPF sem problemas. 
+
+Status: Aprovado 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso teste 9: 
+
+Identificador: CT009 
+Título do teste: Personalização 
+Objetivo do teste: Verificar se o sistema é personalizavel para melhor reconhecimento da empresa, anterando nome e logtipo, no site principal e tela de inicio 
+Funcionalidade testada: Personalização 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta Google 
+
+Após login, selecione a aba “Bitrix24” ao lado a opção de personalização, representada por marcadores de opções 
+
+Clique neles e “Página Inicial”, "Alterar Nome” e “Logo Tipo” 
+
+Resultado esperado: Sistema deve permitir a personalização, mesmo com contaudo gratuido da plataforma. 
+
+Resultado obtido: Sistema não permitiu realizar a alteração completa, sendo possivel apenas alterar o nome. Pois logo é necessário realizar compra da licenças de uso. Sendo assim, indisponivel no plano gratuito 
+
+Status: Reprovado 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso teste 10: 
+
+Identificador: CT010 
+Título do teste: Login/Logoff 
+Objetivo do teste: Verificar se o sistema permite realizar logout da plataforma, solicitando login novamente. Verificando assim segurança ao acesso do colaborador 
+Funcionalidade testada: Conta/Segurança 
+
+ 
+Passos para execução: 
+
+Acesse a página de login do Bitrix24 
+
+Insira e-mail e senha válidos ou acesse com conta Google 
+
+Após login, clique na propria foto de perfil 
+
+Clique em “Sair” ou “LogOff” 
+
+Resultado esperado: Sistema deve permitir a saida rápida da conta e slicitar	acesso novamente para logar naquela conta. 
+
+Resultado obtido: Sistema permitiu sair normalmene, sem apresentar lentidões ou travamentos, respondendo certo para saida de conta e login solicitando atenticação nova. 
+
+Status: Aprovado 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Etapa 3 – Plano de Backup e Recuperação 
+
+Objetivo do backup do sistema: 
+
+Garantir a segurança e disponibilidade dos dados do sistema Bitrix24, assegurando que informações importantes como banco de dados, arquivos e configurações possam ser recuperadas em caso de falhas, perdas ou ataques. 
+
+ 
+
+Frequência do backup 
+
+Backup diário completo, realizado preferencialmente durante a madrugada, horário de menor uso do sistema. 
+
+Backup incremental a cada 3 horas para garantir atualizações mais recentes entre os backups completos. 
+
+Forma de Backup	 
+
+Automático: configurado via ferramentas integradas ou scripts que rodem automaticamente, sem necessidade de intervenção manual. 
+
+Ferramenta ou sistema de backup sugerido 
+
+Para sistemas web baseados na nuvem, como o próprio Bitrix24. Será realizado backup e armazenado no DropBox 
+
+ 
+
+ 
+
+ 
+
+O que será salvo no backup 
+
+Banco de dados com as informações de clientes, usuários, vendas, configurações do CRM, documentos atrelados aos card, como notas fiscais, documentos de identificação dos processos, vendedores e configurações dos colaboradoes. 
+
+ 
+
+Plano de restore (recuperação) 
+
+Caso haja perda ou corrupção dos dados, o backup mais recente será restaurado conforme procedimento padronizado da ferramenta utilizada. 
+
+O processo de restauração deverá ser feito por um profissional qualificado para garantir a integridade dos dados. Sendo pelo próprio suporte Bitrix24. 
+
+ 
+
+5.1 
+
+Restaurar o backup do banco de dados e arquivos no ambiente de produção. 
+
+Verificar a integridade e consistência dos dados após restauração. 
+
+Testar funcionalidades críticas do sistema para garantir que tudo está operacional. 
+
+5.2 
+
+Estima-se um tempo de indisponibilidade entre 5 horas ou 1 dia, dependendo do volume dos dados e velocidade da rede. 
+
+Durante a restauração, o sistema ficará offline para evitar inconsistências. Os usuários devem registrar os dados a moda antiga, para após normalização do sistema, realizar registro de forma online no sistema. 
+
+5.3 
+
+Utilizar lista e validações automáticas fornecidas pelas ferramentas de backup para confirmar a integridade dos arquivos. 
+
+Realizar testes funcionais após restauração para garantir que os dados estão completos e operacionais. 
+
+Manter logs detalhados do processo de backup e restauração para auditoria.
